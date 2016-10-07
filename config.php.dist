@@ -1,0 +1,12 @@
+<?php
+
+$accounts = array(
+	array(
+		'domain'          => 'imap.domain.tdl',
+		'port'            => 993,                              // 143, 993 (ssl)
+		'ssl'             => true,                             //only if ssl port
+		'username'        => 'email@domain.tdl',
+		'password'        => 'password123',
+		'age_in_days'     => 30,                               // all mails older than this number of days will be deleted
+	),
+);
