@@ -3,6 +3,7 @@
 include('config.php');
 
 foreach ($accounts as $account) {
+	print ("ACCOUNT: {$account['username']}\n");
 	// connect to IMAP server by account data
 	$append = $account['ssl'] ? '/ssl' : '';
 	$connect = "{{$account['domain']}:{$account['port']}/imap{$append}}";
